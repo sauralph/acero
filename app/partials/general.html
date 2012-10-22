@@ -1,0 +1,39 @@
+<h2>Ultimas Novedades</h2>
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#general-operaciones">Operaciones</a></li>
+  <li><a href="#profile">Profile</a></li>
+  <li><a href="#messages">Messages</a></li>
+  <li><a href="#settings">Settings</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="general-operaciones">
+  <table class="table">
+	<thead>
+		<tr>
+			<th>Fecha</th>
+			<th>Operacion</th>
+			<th>Usuario</th>
+			<th>Acciones</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="novedad in Novedades">
+			<td>{{novedad.fecha}}</td>
+			<td>{{novedad.Operacion.interno_numerico}}</td>
+			<td>{{novedad.Usuario.nombre}}</td>
+			<td><a href="" class="btn"><i class="icon-cog"></i> Resolver</a></td>
+
+		</tr>
+
+	</tbody>
+
+	</table>
+
+ </div>
+  <div class="tab-pane" id="profile">...</div>
+  <div class="tab-pane" id="messages">...</div>
+  <div class="tab-pane" id="settings">...</div>
+</div>
+
