@@ -8,8 +8,8 @@
 </ul>
  
 <div class="tab-content">
-  <div class="tab-pane active" id="general-operaciones">
-  <table class="table">
+  <div class="tab-pane active">
+  <table class="table" ng-controller="DashboardCtrl">
 	<thead>
 		<tr>
 			<th>Fecha</th>
@@ -19,10 +19,10 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr ng-repeat="novedad in Nove">
-			<td>{{novedad.Novedad.fecha}}</td>
-			<td>{{novedad.Operacion.interno_numerico}}</td>
-			<td>{{novedad.Usuario.nombre}}</td>
+		<tr ng-repeat="novedad in Novedades.novedades">
+			<td>{{fecha}}</td>
+			<td>{{Operacion.interno_numerico}}</td>
+			<td>{{Usuario.nombre}}</td>
 			<td><a href="" class="btn"><i class="icon-cog"></i> Resolver</a></td>
 
 		</tr>

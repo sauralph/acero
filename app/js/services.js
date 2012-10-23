@@ -11,6 +11,8 @@
 //http://localhost/~eze/cakephp/app/acero/index.php/novedades.json
 angular.module('acero.services', ['ngResource']).
     factory('Novedades', function($resource){
-  		return $resource('http://localhost/~eze/cakephp/app/acero/index.php/novedades.json');
+  		// return $resource('http://localhost/~eze/cakephp/app/acero/index.php/novedades.json');
+  		return $resource('http://www.example.com/~eze/cakephp/app/acero/index.php/novedades.json');
+
 });
 

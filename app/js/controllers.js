@@ -7,7 +7,7 @@ function DashboardCtrl($scope,Novedades) {
 	
 
 $scope.Novedades = Novedades.query();
-
+console.log('called');
 }
 // DashboardCtrl.$inject = [];
 
