@@ -19,8 +19,8 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr ng-repeat="novedad in Novedades">
-			<td>{{novedad.fecha}}</td>
+		<tr ng-repeat="novedad in Nove">
+			<td>{{novedad.Novedad.fecha}}</td>
 			<td>{{novedad.Operacion.interno_numerico}}</td>
 			<td>{{novedad.Usuario.nombre}}</td>
 			<td><a href="" class="btn"><i class="icon-cog"></i> Resolver</a></td>
@@ -32,7 +32,7 @@
 	</table>
 
  </div>
-  <div class="tab-pane" id="profile">...</div>
+  <div class="tab-pane" id="profile"><h2>Profile</h2></div>
   <div class="tab-pane" id="messages">...</div>
   <div class="tab-pane" id="settings">...</div>
 </div>

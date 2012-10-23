@@ -3,8 +3,10 @@
 /* Controllers */
 
 
-function DashboardCtrl($scope) {
-$scope.Novedades = [];
+function DashboardCtrl($scope,Novedades) {
+	
+
+$scope.Novedades = Novedades.query();
 
 }
 // DashboardCtrl.$inject = [];
